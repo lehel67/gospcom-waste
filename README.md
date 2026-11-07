@@ -87,5 +87,3 @@ Waste collection of Gosp-Com SRL in **Târgu Secuiesc (Kézdivásárhely), Lunga
 ---
 
 *Nem hivatalos, közösségi projekt, nincs kapcsolatban a Gosp-Com SRL-lel. / Proiect neoficial, neafiliat cu Gosp-Com SRL. / Unofficial project, not affiliated with Gosp-Com SRL.*
-
-*A kód nagy részét Claude (Anthropic) segítségével írtuk. / Developed with the help of Claude (Anthropic).*
