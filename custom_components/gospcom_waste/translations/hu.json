@@ -1,0 +1,71 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Válaszd ki az utcádat",
+        "description": "A Gosp-Com SRL szemétszállítása Kézdivásárhelyen, Nyújtódon, Szászfaluban és Sárfalván. Megkapod a következő szállítást, egy visszaszámlálót, egy naptárt és egy esti emlékeztetőt.",
+        "data": {
+          "street": "Utca, udvartér vagy falu",
+          "reminder_time": "Emlékeztető időpontja (az előző napon)",
+          "notify_service": "Értesítő szolgáltatás (nem kötelező)"
+        },
+        "data_description": {
+          "notify_service": "Például notify.mobile_app_telefonom. Ha üresen hagyod, csak a gospcom_waste_reminder eseményt küldi."
+        }
+      }
+    },
+    "error": {
+      "unknown_notify": "Nincs ilyen értesítő szolgáltatás."
+    },
+    "abort": {
+      "already_configured": "Ez az utca már be van állítva."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Emlékeztető",
+        "data": {
+          "reminder_time": "Emlékeztető időpontja (az előző napon)",
+          "notify_service": "Értesítő szolgáltatás (nem kötelező)"
+        },
+        "data_description": {
+          "notify_service": "Például notify.mobile_app_telefonom. Ha üresen hagyod, csak a gospcom_waste_reminder eseményt küldi."
+        }
+      }
+    },
+    "error": {
+      "unknown_notify": "Nincs ilyen értesítő szolgáltatás."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_collection": {
+        "name": "Következő szállítás"
+      },
+      "next_mixed": {
+        "name": "Következő vegyes szállítás"
+      },
+      "days_until": {
+        "name": "Napok a szállításig"
+      },
+      "put_out": {
+        "name": "Mit kell kitenni",
+        "state": {
+          "mixed_selective_biodegradable": "Vegyes, szelektív és lebomló",
+          "selective_biodegradable": "Szelektív és lebomló"
+        }
+      }
+    },
+    "binary_sensor": {
+      "tomorrow": {
+        "name": "Holnap szemétszállítás"
+      }
+    },
+    "calendar": {
+      "collections": {
+        "name": "Szemétszállítás"
+      }
+    }
+  }
+}

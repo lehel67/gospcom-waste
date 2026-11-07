@@ -1,0 +1,1048 @@
+{
+ "year": 2026,
+ "source": "https://www.gosp-com.ro/hu/hulladekelszallitas-kezdivasarhelyen-nyujtodon-szaszfaluban-es-sarfalvan",
+ "operator": {
+  "name": "Gosp-Com SRL",
+  "phone": [
+   "0267 361 060",
+   "0728 203 308"
+  ],
+  "address": "Kézdivásárhely, Budai Nagy Antal u. 1."
+ },
+ "houses": {
+  "rule_hu": "Minden héten az utca napján: szelektív és lebomló (zöld) hulladék. A páratlan (sárga) heteken ugyanazon a napon a vegyes háztartási hulladékot is viszik.",
+  "rule_ro": "În fiecare săptămână, în ziua străzii: deșeuri selective și biodegradabile. În săptămânile impare (galbene), în aceeași zi se colectează și deșeurile comunale.",
+  "every_week": [
+   "selective",
+   "biodegradable"
+  ],
+  "mixed_iso_weeks": [
+   1,
+   3,
+   5,
+   7,
+   9,
+   11,
+   13,
+   15,
+   17,
+   19,
+   21,
+   23,
+   25,
+   27,
+   29,
+   31,
+   33,
+   35,
+   37,
+   39,
+   41,
+   43,
+   45,
+   47,
+   49,
+   51,
+   53
+  ],
+  "source_image": "https://www.gosp-com.ro/file/program-de-colectare-targu-secuiesc"
+ },
+ "blocks": {
+  "mixed": [
+   "monday",
+   "tuesday",
+   "wednesday",
+   "thursday",
+   "friday",
+   "saturday",
+   "sunday"
+  ],
+  "selective": [
+   "monday",
+   "wednesday",
+   "friday",
+   "saturday"
+  ]
+ },
+ "collection_days": {
+  "dates": [
+   "2026-03-20",
+   "2026-06-12",
+   "2026-09-04",
+   "2026-11-13"
+  ],
+  "hours": "09:00-17:00",
+  "places_hu": [
+   "Régi kaszárnya előtti tér",
+   "Gosp-Com SRL udvara (Budai Nagy Antal, 1. szám)"
+  ],
+  "accepts_hu": [
+   "papír, műanyag, üveg, alumínium doboz",
+   "használt étolaj",
+   "textil",
+   "elektronikai hulladék"
+  ]
+ },
+ "streets": [
+  {
+   "hu": "Nicolae Bălcescu",
+   "ro": "Nicolae Bălcescu",
+   "kind": "street",
+   "mixed_day": "monday"
+  },
+  {
+   "hu": "Nyujtód",
+   "ro": "Lunga",
+   "kind": "village",
+   "mixed_day": "monday"
+  },
+  {
+   "hu": "Sárfalva",
+   "ro": "Tinoasa",
+   "kind": "village",
+   "mixed_day": "monday"
+  },
+  {
+   "hu": "Szászfalu",
+   "ro": "Săsăuși",
+   "kind": "village",
+   "mixed_day": "monday"
+  },
+  {
+   "hu": "36-os udvartér",
+   "ro": "Curtea 36",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "37-es udvartér",
+   "ro": "Curtea 37",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "38-as udvartér",
+   "ro": "Curtea 38",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "39-es udvartér",
+   "ro": "Curtea 39",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "40-es udvartér",
+   "ro": "Curtea 40",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "41-es udvartér",
+   "ro": "Curtea 41",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "42-es udvartér",
+   "ro": "Curtea 42",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "43-as udvartér",
+   "ro": "Curtea 43",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "44-es udvartér",
+   "ro": "Curtea 44",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "45-ös udvartér",
+   "ro": "Curtea 45",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "46-os udvartér",
+   "ro": "Curtea 46",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "47-es udvartér",
+   "ro": "Curtea 47",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "48-as udvartér",
+   "ro": "Curtea 48",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "49-es udvartér",
+   "ro": "Curtea 49",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "50-es udvartér",
+   "ro": "Curtea 50",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "51-es udvartér",
+   "ro": "Curtea 51",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "52-es udvartér",
+   "ro": "Curtea 52",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "53-as udvartér",
+   "ro": "Curtea 53",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "54-es udvartér",
+   "ro": "Curtea 54",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "55-ös udvartér",
+   "ro": "Curtea 55",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "56-os udvartér",
+   "ro": "Curtea 56",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "57-es udvartér",
+   "ro": "Curtea 57",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "58-as udvartér",
+   "ro": "Curtea 58",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "59-es udvartér",
+   "ro": "Curtea 59",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "60-as udvartér",
+   "ro": "Curtea 60",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "61-es udvartér",
+   "ro": "Curtea 61",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "62-es udvartér",
+   "ro": "Curtea 62",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "63-as udvartér",
+   "ro": "Curtea 63",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "64-es udvartér",
+   "ro": "Curtea 64",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "65-ös udvartér",
+   "ro": "Curtea 65",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "66-os udvartér",
+   "ro": "Curtea 66",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "67-es udvartér",
+   "ro": "Curtea 67",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "68-as udvartér",
+   "ro": "Curtea 68",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "70-es udvartér",
+   "ro": "Curtea 70",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "71-es udvartér",
+   "ro": "Curtea 71",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "72-es udvartér",
+   "ro": "Curtea 72",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "73-as udvartér",
+   "ro": "Curtea 73",
+   "kind": "courtyard",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Ady Endre",
+   "ro": "Ady Endre",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Apafi Mihály",
+   "ro": "Apafi Mihály",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Bem József",
+   "ro": "Bem József",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Bethlen Gábor",
+   "ro": "Bethlen Gábor",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Budai Nagy Antal",
+   "ro": "Budai Nagy Antal",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Csernátoni út",
+   "ro": "Cernatului",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Dobolyi Aladár",
+   "ro": "Dobolyi Aladár",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Domokos Pál Péter",
+   "ro": "Domokos Pál Péter",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Fehérmartok",
+   "ro": "Fehérmartok",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Fortyogó út",
+   "ro": "Fortyogó",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Függetlenség utca",
+   "ro": "Independenților",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Gábor Áron tér",
+   "ro": "Piața Gábor Áron",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Jakabos Ödön",
+   "ro": "Jakabos Ödön",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Kanta",
+   "ro": "Kanta",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Keresztes Máté",
+   "ro": "Keresztes Máté",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Kossuth Lajos",
+   "ro": "Kossuth Lajos",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Legelő utca",
+   "ro": "Pășunii",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Martin Luther",
+   "ro": "Martin Luther",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Márton Áron",
+   "ro": "Márton Áron",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Patak utca",
+   "ro": "Râului",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Perkő",
+   "ro": "Perkő",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Petőfi Sándor",
+   "ro": "Petőfi Sándor",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Poligon utca",
+   "ro": "Poligonului",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Szél utca",
+   "ro": "Vântului",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Tóth Sámuel",
+   "ro": "Tóth Sámuel",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Tudor Vladimirescu",
+   "ro": "Tudor Vladimirescu",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Turóczi Mózes",
+   "ro": "Turóczi Mózes",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Varga Katalin",
+   "ro": "Varga Katalin",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "Wesselényi Miklós",
+   "ro": "Wesselényi Miklós",
+   "kind": "street",
+   "mixed_day": "tuesday"
+  },
+  {
+   "hu": "24-es udvartér",
+   "ro": "Curtea 24",
+   "kind": "courtyard",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Apor Péter",
+   "ro": "Apor Péter",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Bod Péter",
+   "ro": "Bod Péter",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Híd utca",
+   "ro": "Podului",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Iskola utca",
+   "ro": "Școlii",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Kovácsok utca",
+   "ro": "Fierarilor",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Kőrösi Csoma Sándor",
+   "ro": "Kőrösi Csoma Sándor",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Malom utca",
+   "ro": "Morii",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Matkó István",
+   "ro": "Matkó István",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Mesterek utca",
+   "ro": "Meseriașilor",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Nagy Mózes",
+   "ro": "Nagy Mózes",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Ráczok",
+   "ro": "Ráczok",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Rózsapalló",
+   "ro": "Rózsapalló",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Tavasz utca",
+   "ro": "Primăverii",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Temető utca",
+   "ro": "Cimitirilor",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Vágóhíd utca",
+   "ro": "Abator",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "Vásárhelyi Péter",
+   "ro": "Vásárhelyi Péter",
+   "kind": "street",
+   "mixed_day": "wednesday"
+  },
+  {
+   "hu": "1-es udvartér",
+   "ro": "Curtea 1",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "2-es udvartér",
+   "ro": "Curtea 2",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "3-as udvartér",
+   "ro": "Curtea 3",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "4-es udvartér",
+   "ro": "Curtea 4",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "5-ös udvartér",
+   "ro": "Curtea 5",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "6-os udvartér",
+   "ro": "Curtea 6",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "7-es udvartér",
+   "ro": "Curtea 7",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "8-as udvartér",
+   "ro": "Curtea 8",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "9-es udvartér",
+   "ro": "Curtea 9",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "10-es udvartér",
+   "ro": "Curtea 10",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "11-es udvartér",
+   "ro": "Curtea 11",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "12-es udvartér",
+   "ro": "Curtea 12",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "13-as udvartér",
+   "ro": "Curtea 13",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "14-es udvartér",
+   "ro": "Curtea 14",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "15-ös udvartér",
+   "ro": "Curtea 15",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "16-os udvartér",
+   "ro": "Curtea 16",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "17-es udvartér",
+   "ro": "Curtea 17",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "18-as udvartér",
+   "ro": "Curtea 18",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "19-es udvartér",
+   "ro": "Curtea 19",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "20-as udvartér",
+   "ro": "Curtea 20",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "21-es udvartér",
+   "ro": "Curtea 21",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "22-es udvartér",
+   "ro": "Curtea 22",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "23-as udvartér",
+   "ro": "Curtea 23",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "25-ös udvartér",
+   "ro": "Curtea 25",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "26-os udvartér",
+   "ro": "Curtea 26",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "27-es udvartér",
+   "ro": "Curtea 27",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "28-as udvartér",
+   "ro": "Curtea 28",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "29-es udvartér",
+   "ro": "Curtea 29",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "30-as udvartér",
+   "ro": "Curtea 30",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "31-es udvartér",
+   "ro": "Curtea 31",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "32-es udvartér",
+   "ro": "Curtea 32",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "33-as udvartér",
+   "ro": "Curtea 33",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "34-es udvartér",
+   "ro": "Curtea 34",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "35-ös udvartér",
+   "ro": "Curtea 35",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "69-es udvartér",
+   "ro": "Curtea 69",
+   "kind": "courtyard",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Barabás Miklós",
+   "ro": "Barabás Miklós",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Baromtér",
+   "ro": "Oborului",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "December 30",
+   "ro": "30 Decembrie",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Domb utca",
+   "ro": "Dâmbului",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Józsa Béla",
+   "ro": "Józsa Béla",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Mikes Kelemen",
+   "ro": "Mikes Kelemen",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Nagy Sándor",
+   "ro": "Nagy Sándor",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Oroszfalvi út",
+   "ro": "Ruseni",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Papp Mihály",
+   "ro": "Papp Mihály",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Táncsics Mihály",
+   "ro": "Táncsics Mihály",
+   "kind": "street",
+   "mixed_day": "thursday"
+  },
+  {
+   "hu": "Achim Andrei",
+   "ro": "Achim Andrei",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Állomás utca",
+   "ro": "Gării",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Arany János",
+   "ro": "Arany János",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Bálványos utca",
+   "ro": "Bálványos",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Béke utca",
+   "ro": "Păcii",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Boér Géza",
+   "ro": "Boér Géza",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Dózsa György",
+   "ro": "Dózsa György",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Fenyves utca",
+   "ro": "Brazilor",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Haladás utca",
+   "ro": "Progresului",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Határér",
+   "ro": "Határér",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Kert utca",
+   "ro": "Grădinii",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Margaréta utca",
+   "ro": "Margaretei",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Mihai Eminescu",
+   "ro": "Mihai Eminescu",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Molnár Józsiás",
+   "ro": "Molnár Józsiás",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Nap utca",
+   "ro": "Soarelui",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Nemere utca",
+   "ro": "Nemere",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Óvoda utca",
+   "ro": "Grădiniței",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Purczel János",
+   "ro": "Purczel János",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Stadion utca",
+   "ro": "Stadionului",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Szabó Jenő",
+   "ro": "Szabó Jenő",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Szacsvay János",
+   "ro": "Szacsvay János",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Szőcs József",
+   "ro": "Szőcs József",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Tamási Áron",
+   "ro": "Tamási Áron",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Torjai út",
+   "ro": "Turiei",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Új utca",
+   "ro": "Nou",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Vár utca",
+   "ro": "Cetății",
+   "kind": "street",
+   "mixed_day": "friday"
+  },
+  {
+   "hu": "Villák utca",
+   "ro": "Vilelor",
+   "kind": "street",
+   "mixed_day": "friday"
+  }
+ ],
+ "holiday_rule": {
+  "hu": "Ha a szállítás napja munkaszüneti napra esik, a következő munkanapon (hétfő–péntek) viszik.",
+  "ro": "Dacă ziua de colectare cade într-o zi de sărbătoare legală, colectarea se face în următoarea zi lucrătoare (luni–vineri).",
+  "shift": "next_working_day",
+  "holidays": "RO"
+ }
+}

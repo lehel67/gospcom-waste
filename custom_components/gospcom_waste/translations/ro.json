@@ -1,0 +1,71 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Alege strada",
+        "description": "Colectarea deșeurilor Gosp-Com SRL în Târgu Secuiesc, Lunga, Săsăuși și Tinoasa. Primești următoarea colectare, o numărătoare inversă, un calendar și un memento seara.",
+        "data": {
+          "street": "Stradă, curte sau sat",
+          "reminder_time": "Ora mementoului (cu o zi înainte)",
+          "notify_service": "Serviciu de notificare (opțional)"
+        },
+        "data_description": {
+          "notify_service": "De ex. notify.mobile_app_telefonul_meu. Lasă gol pentru a primi doar evenimentul gospcom_waste_reminder."
+        }
+      }
+    },
+    "error": {
+      "unknown_notify": "Acest serviciu de notificare nu există."
+    },
+    "abort": {
+      "already_configured": "Această stradă este deja configurată."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Memento",
+        "data": {
+          "reminder_time": "Ora mementoului (cu o zi înainte)",
+          "notify_service": "Serviciu de notificare (opțional)"
+        },
+        "data_description": {
+          "notify_service": "De ex. notify.mobile_app_telefonul_meu. Lasă gol pentru a primi doar evenimentul gospcom_waste_reminder."
+        }
+      }
+    },
+    "error": {
+      "unknown_notify": "Acest serviciu de notificare nu există."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_collection": {
+        "name": "Următoarea colectare"
+      },
+      "next_mixed": {
+        "name": "Următoarea colectare menajeră"
+      },
+      "days_until": {
+        "name": "Zile până la colectare"
+      },
+      "put_out": {
+        "name": "Ce trebuie scos",
+        "state": {
+          "mixed_selective_biodegradable": "Menajere, selective și biodegradabile",
+          "selective_biodegradable": "Selective și biodegradabile"
+        }
+      }
+    },
+    "binary_sensor": {
+      "tomorrow": {
+        "name": "Colectare mâine"
+      }
+    },
+    "calendar": {
+      "collections": {
+        "name": "Colectare deșeuri"
+      }
+    }
+  }
+}

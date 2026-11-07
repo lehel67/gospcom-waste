@@ -1,0 +1,71 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Pick your street",
+        "description": "Waste collection of Gosp-Com SRL in Târgu Secuiesc, Lunga, Săsăuși and Tinoasa. You get the next collection, a countdown, a calendar and an evening reminder.",
+        "data": {
+          "street": "Street, courtyard or village",
+          "reminder_time": "Reminder time (the day before)",
+          "notify_service": "Notify service (optional)"
+        },
+        "data_description": {
+          "notify_service": "E.g. notify.mobile_app_my_phone. Leave empty to only get the gospcom_waste_reminder event."
+        }
+      }
+    },
+    "error": {
+      "unknown_notify": "This notify service does not exist."
+    },
+    "abort": {
+      "already_configured": "This street is already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Reminder",
+        "data": {
+          "reminder_time": "Reminder time (the day before)",
+          "notify_service": "Notify service (optional)"
+        },
+        "data_description": {
+          "notify_service": "E.g. notify.mobile_app_my_phone. Leave empty to only get the gospcom_waste_reminder event."
+        }
+      }
+    },
+    "error": {
+      "unknown_notify": "This notify service does not exist."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_collection": {
+        "name": "Next collection"
+      },
+      "next_mixed": {
+        "name": "Next mixed waste collection"
+      },
+      "days_until": {
+        "name": "Days until collection"
+      },
+      "put_out": {
+        "name": "What to put out",
+        "state": {
+          "mixed_selective_biodegradable": "Mixed, selective and biodegradable",
+          "selective_biodegradable": "Selective and biodegradable"
+        }
+      }
+    },
+    "binary_sensor": {
+      "tomorrow": {
+        "name": "Collection tomorrow"
+      }
+    },
+    "calendar": {
+      "collections": {
+        "name": "Waste collection"
+      }
+    }
+  }
+}
