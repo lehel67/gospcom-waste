@@ -20,3 +20,10 @@ PUT_OUT_SELECTIVE: Final = "selective_biodegradable"
 
 # Yearly data files (2027.json, ...) put here override the shipped ones.
 USER_DATA_FOLDER: Final = "gospcom_waste"
+
+# Optional sign-in to the customer account (www.gosp-com.ro/account) for the bills.
+CONF_EMAIL: Final = "email"
+CONF_PASSWORD: Final = "password"
+
+BILLS_UPDATE_HOURS: Final = 6
+EVENT_NEW_BILL: Final = "gospcom_waste_new_bill"

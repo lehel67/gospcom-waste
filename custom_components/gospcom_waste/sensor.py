@@ -11,7 +11,7 @@ from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddConfigEntryEntitiesCallback
 
 from .const import PUT_OUT_ALL, PUT_OUT_SELECTIVE
-from .entity import WasteEntity
+from .entity import BillEntity, WasteEntity
 from .schedule import Collection
 from .texts import day_text, reminder_message, types_text
 from .tracker import WasteConfigEntry, WasteTracker
@@ -32,6 +32,12 @@ async def async_setup_entry(
             PutOutSensor(tracker),
         ]
     )
+    if tracker.bills is not None:
+        async_add_entities(
+            entity
+            for code in tracker.bills.data or {}
+            for entity in (AmountDueSensor(tracker, code), LastBillSensor(tracker, code))
+        )
 
 
 def _details(tracker: WasteTracker, collection: Collection | None) -> dict[str, Any]:
@@ -158,3 +164,67 @@ class PutOutSensor(WasteEntity, SensorEntity):
     def extra_state_attributes(self) -> dict[str, Any]:
         """Return the details of the next collection."""
         return _details(self.tracker, self.tracker.next_collection())
+
+
+INVOICE_HISTORY = 12  # invoices listed in the attributes (about two years)
+
+
+class AmountDueSensor(BillEntity, SensorEntity):
+    """What is to pay now on one customer code."""
+
+    _attr_device_class = SensorDeviceClass.MONETARY
+    _attr_native_unit_of_measurement = "RON"
+    _attr_suggested_display_precision = 2
+    _attr_icon = "mdi:cash-clock"
+
+    def __init__(self, tracker: WasteTracker, code: str) -> None:
+        """Initialize the sensor."""
+        super().__init__(tracker, "amount_due", code)
+
+    @property
+    def native_value(self) -> float | None:
+        """Return the amount to pay."""
+        return self.account.total_due if self.account else None
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        """Return the open and the recent invoices (read by the Számla-naptár integration)."""
+        account = self.account
+        if account is None:
+            return {}
+        return {
+            "gospcom_client_code": self.code,
+            "open_invoices": len(account.open_invoices),
+            "invoices": [inv.as_dict() for inv in account.invoices[:INVOICE_HISTORY]],
+        }
+
+
+class LastBillSensor(BillEntity, SensorEntity):
+    """The newest bill of one customer code."""
+
+    _attr_device_class = SensorDeviceClass.MONETARY
+    _attr_native_unit_of_measurement = "RON"
+    _attr_suggested_display_precision = 2
+    _attr_icon = "mdi:receipt-text-outline"
+
+    def __init__(self, tracker: WasteTracker, code: str) -> None:
+        """Initialize the sensor."""
+        super().__init__(tracker, "last_bill", code)
+
+    @property
+    def native_value(self) -> float | None:
+        """Return the amount of the newest bill."""
+        last = self.account.last_invoice if self.account else None
+        return last.amount if last else None
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        """Return the details of the newest bill."""
+        last = self.account.last_invoice if self.account else None
+        if last is None:
+            return {}
+        return {
+            **last.as_dict(),
+            "date_text": day_text(last.issued, self.tracker.language),
+            "fully_paid": last.rest <= 0.005,
+        }

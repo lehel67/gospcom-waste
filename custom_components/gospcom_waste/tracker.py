@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections.abc import Callable
 from datetime import date, datetime, time, timedelta
 import logging
+from typing import TYPE_CHECKING
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import CALLBACK_TYPE, HomeAssistant, callback
@@ -22,6 +23,9 @@ from .const import (
 )
 from .schedule import Collection, Schedule, Street
 from .texts import reminder_message, texts, types_text
+
+if TYPE_CHECKING:
+    from .bills import BillsCoordinator
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -41,6 +45,7 @@ class WasteTracker:
             entry.options.get(CONF_REMINDER_TIME, DEFAULT_REMINDER_TIME)
         )
         self.notify_service: str = (entry.options.get(CONF_NOTIFY_SERVICE) or "").strip()
+        self.bills: BillsCoordinator | None = None  # set when the account is signed in
         self._listeners: list[Callable[[], None]] = []
         self._unsubs: list[CALLBACK_TYPE] = []
 

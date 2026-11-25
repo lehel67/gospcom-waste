@@ -3,22 +3,38 @@
     "step": {
       "user": {
         "title": "Pick your street",
-        "description": "Waste collection of Gosp-Com SRL in Târgu Secuiesc, Lunga, Săsăuși and Tinoasa. You get the next collection, a countdown, a calendar and an evening reminder.",
+        "description": "Waste collection of Gosp-Com SRL in Târgu Secuiesc, Lunga, Săsăuși and Tinoasa. You get the next collection, a countdown, a calendar and an evening reminder. With your Gosp-Com account you also get the bills: the amount due, the last bill and a message when a new one comes.",
         "data": {
           "street": "Street, courtyard or village",
           "reminder_time": "Reminder time (the day before)",
-          "notify_service": "Notify service (optional)"
+          "notify_service": "Notify service (optional)",
+          "email": "Gosp-Com account e-mail (optional)",
+          "password": "Gosp-Com account password"
         },
         "data_description": {
-          "notify_service": "E.g. notify.mobile_app_my_phone. Leave empty to only get the gospcom_waste_reminder event."
+          "notify_service": "E.g. notify.mobile_app_my_phone. Leave empty to only get the gospcom_waste_reminder event.",
+          "email": "Sign in to www.gosp-com.ro/account to get your bills too. Leave empty if you only need the collection days.",
+          "password": "When changing other settings, leave empty to keep the saved password."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in to Gosp-Com again",
+        "description": "Gosp-Com no longer accepts the saved password. Enter the account's e-mail address and password.",
+        "data": {
+          "email": "Gosp-Com account e-mail",
+          "password": "Gosp-Com account password"
         }
       }
     },
     "error": {
-      "unknown_notify": "This notify service does not exist."
+      "unknown_notify": "This notify service does not exist.",
+      "invalid_auth": "Gosp-Com did not accept this e-mail address and password.",
+      "cannot_connect": "Could not reach www.gosp-com.ro. Try again later.",
+      "password_required": "Enter the password of the Gosp-Com account."
     },
     "abort": {
-      "already_configured": "This street is already set up."
+      "already_configured": "This street is already set up.",
+      "reauth_successful": "Signed in again."
     }
   },
   "options": {
@@ -27,15 +43,22 @@
         "title": "Reminder",
         "data": {
           "reminder_time": "Reminder time (the day before)",
-          "notify_service": "Notify service (optional)"
+          "notify_service": "Notify service (optional)",
+          "email": "Gosp-Com account e-mail (optional)",
+          "password": "Gosp-Com account password"
         },
         "data_description": {
-          "notify_service": "E.g. notify.mobile_app_my_phone. Leave empty to only get the gospcom_waste_reminder event."
+          "notify_service": "E.g. notify.mobile_app_my_phone. Leave empty to only get the gospcom_waste_reminder event.",
+          "email": "Sign in to www.gosp-com.ro/account to get your bills too. Leave empty if you only need the collection days.",
+          "password": "When changing other settings, leave empty to keep the saved password."
         }
       }
     },
     "error": {
-      "unknown_notify": "This notify service does not exist."
+      "unknown_notify": "This notify service does not exist.",
+      "invalid_auth": "Gosp-Com did not accept this e-mail address and password.",
+      "cannot_connect": "Could not reach www.gosp-com.ro. Try again later.",
+      "password_required": "Enter the password of the Gosp-Com account."
     }
   },
   "entity": {
@@ -55,11 +78,20 @@
           "mixed_selective_biodegradable": "Mixed, selective and biodegradable",
           "selective_biodegradable": "Selective and biodegradable"
         }
+      },
+      "amount_due": {
+        "name": "Amount due{code}"
+      },
+      "last_bill": {
+        "name": "Last bill{code}"
       }
     },
     "binary_sensor": {
       "tomorrow": {
         "name": "Collection tomorrow"
+      },
+      "unpaid": {
+        "name": "Unpaid bill{code}"
       }
     },
     "calendar": {

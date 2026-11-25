@@ -5,9 +5,9 @@
     "@lehel67"
   ],
   "config_flow": true,
-  "documentation": "https://github.com/lehel67/ha-gospcom-waste",
+  "documentation": "https://github.com/lehel67/gospcom-waste",
   "integration_type": "service",
-  "iot_class": "calculated",
-  "issue_tracker": "https://github.com/lehel67/ha-gospcom-waste/issues",
-  "version": "0.1.1"
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/lehel67/gospcom-waste/issues",
+  "version": "0.2.0"
 }

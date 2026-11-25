@@ -20,6 +20,8 @@ TEXTS: dict[str, dict[str, str]] = {
         "weekdays": "hétfő,kedd,szerda,csütörtök,péntek,szombat,vasárnap",
         "months": "jan.,febr.,márc.,ápr.,máj.,jún.,júl.,aug.,szept.,okt.,nov.,dec.",
         "date": "{weekday}, {month} {day}.",
+        "bill_title": "🧾 Új Gosp-Com számla",
+        "bill": "Új számla: {amount} lej ({day}, sz. {number}). Most fizetendő összesen: {due} lej.",
     },
     "ro": {
         MIXED: "menajere",
@@ -34,6 +36,8 @@ TEXTS: dict[str, dict[str, str]] = {
         "weekdays": "luni,marți,miercuri,joi,vineri,sâmbătă,duminică",
         "months": "ian.,feb.,mar.,apr.,mai,iun.,iul.,aug.,sept.,oct.,nov.,dec.",
         "date": "{weekday}, {day} {month}",
+        "bill_title": "🧾 Factură nouă Gosp-Com",
+        "bill": "Factură nouă: {amount} lei ({day}, nr. {number}). De plată acum în total: {due} lei.",
     },
     "en": {
         MIXED: "mixed household",
@@ -48,6 +52,8 @@ TEXTS: dict[str, dict[str, str]] = {
         "weekdays": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday",
         "months": "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec",
         "date": "{weekday}, {day} {month}",
+        "bill_title": "🧾 New Gosp-Com bill",
+        "bill": "New bill: {amount} lei ({day}, no. {number}). Total to pay now: {due} lei.",
     },
 }
 
