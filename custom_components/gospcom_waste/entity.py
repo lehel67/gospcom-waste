@@ -39,3 +39,32 @@ class WasteEntity(Entity):
     async def async_added_to_hass(self) -> None:
         """Follow the day changes."""
         self.async_on_remove(self.tracker.async_add_listener(self.async_write_ha_state))
+
+
+class BillEntity(WasteEntity):
+    """Base for the bill entities of one customer code; refreshed by the bills coordinator."""
+
+    _attr_attribution = "Gosp-Com SRL – www.gosp-com.ro/account"
+
+    def __init__(self, tracker: WasteTracker, key: str, code: str) -> None:
+        """Initialize the entity."""
+        super().__init__(tracker, key)
+        self.code = code
+        self.coordinator = tracker.bills
+        self._attr_unique_id = f"{tracker.entry.entry_id}_{key}_{code}"
+        several = len(self.coordinator.data or {}) > 1
+        self._attr_translation_placeholders = {"code": f" ({code})" if several else ""}
+
+    @property
+    def account(self):
+        """This customer code's bills, or None if the last refresh did not have it."""
+        return (self.coordinator.data or {}).get(self.code)
+
+    @property
+    def available(self) -> bool:
+        """Available while the last refresh worked and listed this customer code."""
+        return self.coordinator.last_update_success and self.account is not None
+
+    async def async_added_to_hass(self) -> None:
+        """Follow the bill refreshes (not the day changes)."""
+        self.async_on_remove(self.coordinator.async_add_listener(self.async_write_ha_state))

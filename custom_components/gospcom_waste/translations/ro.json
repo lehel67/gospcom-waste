@@ -3,22 +3,38 @@
     "step": {
       "user": {
         "title": "Alege strada",
-        "description": "Colectarea deșeurilor Gosp-Com SRL în Târgu Secuiesc, Lunga, Săsăuși și Tinoasa. Primești următoarea colectare, o numărătoare inversă, un calendar și un memento seara.",
+        "description": "Colectarea deșeurilor Gosp-Com SRL în Târgu Secuiesc, Lunga, Săsăuși și Tinoasa. Primești următoarea colectare, o numărătoare inversă, un calendar și un memento seara. Cu contul Gosp-Com primești și facturile: suma de plată, ultima factură și un mesaj când vine una nouă.",
         "data": {
           "street": "Stradă, curte sau sat",
           "reminder_time": "Ora mementoului (cu o zi înainte)",
-          "notify_service": "Serviciu de notificare (opțional)"
+          "notify_service": "Serviciu de notificare (opțional)",
+          "email": "E-mailul contului Gosp-Com (opțional)",
+          "password": "Parola contului Gosp-Com"
         },
         "data_description": {
-          "notify_service": "De ex. notify.mobile_app_telefonul_meu. Lasă gol pentru a primi doar evenimentul gospcom_waste_reminder."
+          "notify_service": "De ex. notify.mobile_app_telefonul_meu. Lasă gol pentru a primi doar evenimentul gospcom_waste_reminder.",
+          "email": "Se autentifică pe www.gosp-com.ro/account ca să vezi și facturile. Lasă gol dacă îți trebuie doar zilele de colectare.",
+          "password": "Când modifici alte setări, lasă gol ca să rămână parola salvată."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Autentifică-te din nou la Gosp-Com",
+        "description": "Gosp-Com nu mai acceptă parola salvată. Introdu e-mailul și parola contului.",
+        "data": {
+          "email": "E-mailul contului Gosp-Com",
+          "password": "Parola contului Gosp-Com"
         }
       }
     },
     "error": {
-      "unknown_notify": "Acest serviciu de notificare nu există."
+      "unknown_notify": "Acest serviciu de notificare nu există.",
+      "invalid_auth": "Gosp-Com nu a acceptat acest e-mail și această parolă.",
+      "cannot_connect": "www.gosp-com.ro nu poate fi accesat. Încearcă mai târziu.",
+      "password_required": "Introdu parola contului Gosp-Com."
     },
     "abort": {
-      "already_configured": "Această stradă este deja configurată."
+      "already_configured": "Această stradă este deja configurată.",
+      "reauth_successful": "Autentificare reușită."
     }
   },
   "options": {
@@ -27,15 +43,22 @@
         "title": "Memento",
         "data": {
           "reminder_time": "Ora mementoului (cu o zi înainte)",
-          "notify_service": "Serviciu de notificare (opțional)"
+          "notify_service": "Serviciu de notificare (opțional)",
+          "email": "E-mailul contului Gosp-Com (opțional)",
+          "password": "Parola contului Gosp-Com"
         },
         "data_description": {
-          "notify_service": "De ex. notify.mobile_app_telefonul_meu. Lasă gol pentru a primi doar evenimentul gospcom_waste_reminder."
+          "notify_service": "De ex. notify.mobile_app_telefonul_meu. Lasă gol pentru a primi doar evenimentul gospcom_waste_reminder.",
+          "email": "Se autentifică pe www.gosp-com.ro/account ca să vezi și facturile. Lasă gol dacă îți trebuie doar zilele de colectare.",
+          "password": "Când modifici alte setări, lasă gol ca să rămână parola salvată."
         }
       }
     },
     "error": {
-      "unknown_notify": "Acest serviciu de notificare nu există."
+      "unknown_notify": "Acest serviciu de notificare nu există.",
+      "invalid_auth": "Gosp-Com nu a acceptat acest e-mail și această parolă.",
+      "cannot_connect": "www.gosp-com.ro nu poate fi accesat. Încearcă mai târziu.",
+      "password_required": "Introdu parola contului Gosp-Com."
     }
   },
   "entity": {
@@ -55,11 +78,20 @@
           "mixed_selective_biodegradable": "Menajere, selective și biodegradabile",
           "selective_biodegradable": "Selective și biodegradabile"
         }
+      },
+      "amount_due": {
+        "name": "Sumă de plată{code}"
+      },
+      "last_bill": {
+        "name": "Ultima factură{code}"
       }
     },
     "binary_sensor": {
       "tomorrow": {
         "name": "Colectare mâine"
+      },
+      "unpaid": {
+        "name": "Factură neachitată{code}"
       }
     },
     "calendar": {

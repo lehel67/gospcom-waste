@@ -3,22 +3,38 @@
     "step": {
       "user": {
         "title": "Válaszd ki az utcádat",
-        "description": "A Gosp-Com SRL szemétszállítása Kézdivásárhelyen, Nyújtódon, Szászfaluban és Sárfalván. Megkapod a következő szállítást, egy visszaszámlálót, egy naptárt és egy esti emlékeztetőt.",
+        "description": "A Gosp-Com SRL szemétszállítása Kézdivásárhelyen, Nyújtódon, Szászfaluban és Sárfalván. Megkapod a következő szállítást, egy visszaszámlálót, egy naptárt és egy esti emlékeztetőt. A Gosp-Com fiókoddal a számlákat is megkapod: a fizetendő összeget, az utolsó számlát és értesítést, ha új jön.",
         "data": {
           "street": "Utca, udvartér vagy falu",
           "reminder_time": "Emlékeztető időpontja (az előző napon)",
-          "notify_service": "Értesítő szolgáltatás (nem kötelező)"
+          "notify_service": "Értesítő szolgáltatás (nem kötelező)",
+          "email": "Gosp-Com fiók e-mail-címe (nem kötelező)",
+          "password": "Gosp-Com fiók jelszava"
         },
         "data_description": {
-          "notify_service": "Például notify.mobile_app_telefonom. Ha üresen hagyod, csak a gospcom_waste_reminder eseményt küldi."
+          "notify_service": "Például notify.mobile_app_telefonom. Ha üresen hagyod, csak a gospcom_waste_reminder eseményt küldi.",
+          "email": "Bejelentkezik a www.gosp-com.ro/account oldalra, hogy a számlákat is lásd. Hagyd üresen, ha csak a szállítási napok kellenek.",
+          "password": "Más beállítás módosításakor hagyd üresen, akkor a mentett jelszó marad."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Jelentkezz be újra a Gosp-Comhoz",
+        "description": "A Gosp-Com már nem fogadja el a mentett jelszót. Add meg a fiók e-mail-címét és jelszavát.",
+        "data": {
+          "email": "Gosp-Com fiók e-mail-címe",
+          "password": "Gosp-Com fiók jelszava"
         }
       }
     },
     "error": {
-      "unknown_notify": "Nincs ilyen értesítő szolgáltatás."
+      "unknown_notify": "Nincs ilyen értesítő szolgáltatás.",
+      "invalid_auth": "A Gosp-Com nem fogadta el ezt az e-mail-címet és jelszót.",
+      "cannot_connect": "A www.gosp-com.ro nem érhető el. Próbáld újra később.",
+      "password_required": "Add meg a Gosp-Com fiók jelszavát."
     },
     "abort": {
-      "already_configured": "Ez az utca már be van állítva."
+      "already_configured": "Ez az utca már be van állítva.",
+      "reauth_successful": "Sikeres újra-bejelentkezés."
     }
   },
   "options": {
@@ -27,15 +43,22 @@
         "title": "Emlékeztető",
         "data": {
           "reminder_time": "Emlékeztető időpontja (az előző napon)",
-          "notify_service": "Értesítő szolgáltatás (nem kötelező)"
+          "notify_service": "Értesítő szolgáltatás (nem kötelező)",
+          "email": "Gosp-Com fiók e-mail-címe (nem kötelező)",
+          "password": "Gosp-Com fiók jelszava"
         },
         "data_description": {
-          "notify_service": "Például notify.mobile_app_telefonom. Ha üresen hagyod, csak a gospcom_waste_reminder eseményt küldi."
+          "notify_service": "Például notify.mobile_app_telefonom. Ha üresen hagyod, csak a gospcom_waste_reminder eseményt küldi.",
+          "email": "Bejelentkezik a www.gosp-com.ro/account oldalra, hogy a számlákat is lásd. Hagyd üresen, ha csak a szállítási napok kellenek.",
+          "password": "Más beállítás módosításakor hagyd üresen, akkor a mentett jelszó marad."
         }
       }
     },
     "error": {
-      "unknown_notify": "Nincs ilyen értesítő szolgáltatás."
+      "unknown_notify": "Nincs ilyen értesítő szolgáltatás.",
+      "invalid_auth": "A Gosp-Com nem fogadta el ezt az e-mail-címet és jelszót.",
+      "cannot_connect": "A www.gosp-com.ro nem érhető el. Próbáld újra később.",
+      "password_required": "Add meg a Gosp-Com fiók jelszavát."
     }
   },
   "entity": {
@@ -55,11 +78,20 @@
           "mixed_selective_biodegradable": "Vegyes, szelektív és lebomló",
           "selective_biodegradable": "Szelektív és lebomló"
         }
+      },
+      "amount_due": {
+        "name": "Fizetendő összeg{code}"
+      },
+      "last_bill": {
+        "name": "Utolsó számla{code}"
       }
     },
     "binary_sensor": {
       "tomorrow": {
         "name": "Holnap szemétszállítás"
+      },
+      "unpaid": {
+        "name": "Kifizetetlen számla{code}"
       }
     },
     "calendar": {
